@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{%block title%}
+Villes
+{%endblock%}
+
+{%block body%}
+{%if langue == "FR"%}
+Vos villes préférées sont: <br>
+{%endif%}
+{%if langue == "EN"%}
+Your favourite cities are: <br>
+{%endif%}
+
+1. {{ ville1 | capitalize }} <br>
+2. {{ ville2 | capitalize }} <br>
+3. {{ ville3 | capitalize }} <br>
+
+{%endblock%}

@@ -1,0 +1,19 @@
+{% extends "base.html.twig"%}
+
+{% block title %}
+Ville
+{% endblock %}
+
+{% block body %}
+Ville: {{ nom }}
+Population: {{ population }}
+Pays: {{ pays }}
+
+<br>
+
+kasia est ici : {{ tableauNoms[1] }}
+<br>
+La date : {{ laDate.format('y-m-d')}}
+<br>
+{{ dump(tableauNoms)}}
+{% endblock %}
